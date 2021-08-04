@@ -1,0 +1,50 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 95vh;
+  &__article {
+    background-color: $col-black;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__heading {
+    margin-bottom: 2.5rem;
+    color: $col-white;
+  }
+  &__question__btn {
+    margin: 2rem 0;
+    background-color: $col-teal;
+    color: $col-grey;
+    padding: 1rem;
+    font-size: large;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    &:hover {
+      color: $col-teal;
+      background-color: $col-white;
+      cursor: pointer;
+    }
+    &:disabled {
+      display: none;
+    }
+  }
+  &__modal {
+    &__text {
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      line-height: 1.75;
+      font-weight: bold;
+    }
+    &__btn {
+      padding: 0.5rem 1rem;
+      font-size: 2rem;
+      font-weight: bold;
+      border: none;
+    }
+  }
+}
